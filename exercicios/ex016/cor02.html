@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        * { /* Configurações globais das CSS */
+            height: 100%;
+        }
+        body {
+            background-image: linear-gradient(-45deg, #00ffcc, #2bff00, #bbff00 );
+            background-attachment: fixed;
+        } /* to: right, left, top e bottom, ou por ângulo xdeg*/
+        body {
+            background-image: radial-gradient(circle, #00ffcc, #2bff00 10%, #bbff00)
+        } /* Modo radial: circle, ellipse. A porcentagem controla quanto da tela vai ser coberto por AQUELA cor. */
+    </style>
+</head>
+<body>
+    <h1>Testando Gradiente</h1>
+</body>
+</html>

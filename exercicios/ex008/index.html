@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de textos</title>
+    <style>
+        mark {
+            background-color: lime;
+        }
+    </style> <!-- Em uma situação que eu tenho que alterar muitos de algo ao mesmo tempo em CSS, basta vir na parte de head, criar o style ou o que for usar, depois selecionar a tag com seletor {} e alterar o que eu quero, nesse caso foi a background-color, isso vai ser aplicado à TODOS que tiverem aquilo que eu alterei em todo o código. -->
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;</p> <!-- b = bold (negrito)- Forma não-semântica -->
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;</p> <!-- strong = forte (texto em destaque) - Semântico pois traz o sentido, o objetivo do texto em negrito. -->
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag &lt;i&gt;</p> <!-- i = italic (não semântico) - Pode-se usar Ctrl + Shift + P e selecionar Wrap with Abbreviation, depois escrever a tag que desejar na caixa, nesse caso é <i> -->
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag &lt;em&gt;</p> <!-- em = emphasis (ênfase do texto, o pôr em destaque) - Semântico pois traz o sentido -->
+    <h2>Texto marcado</h2>
+    <p>Podemos também criar um <mark style="background-color: lime;">texto marcado</mark> usando a tag &lt;mark&gt;</p> <!-- A partir do momento que saí do significado e comecei a tratar da forma, ou seja, parei de querer apenas que o texto estivesse marcado, e quis configurar A COR DA MARCAÇÃO, ou seja, a forma da marcação e não seu significado, isso já se torna a área do CSS, portanto, o style é do CSS. -->
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p> <!-- Sem o CSS a configuração do <mark> é padrão. -->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p> <!-- O <big> se tornou obsoleto por conta de tratar apenas da forma do conteúdo (ou seja, coisa do CSS), enquanto o small se mantém pois um sentido pode ser atribuído àquilo. Por exemplo, informações importantes podem ser colocadas no canto de um rótulo com letras menores, semanticamente as letras pequenas têm um significado agora, porém não se há isso para letras grandes. -->
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del>, para indicar que deve ser lido mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins>, para dar uma ênfase e indicar que ele foi adicionado depois.</p> <!-- Formatação idêntica ao <u>, porém, o <ins> é semântico, o <u> não possui significado. -->
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas do tipo X<sup>2</sup> + 3</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas como H<sub>2</sub>0</p>
+</body>
+</html>

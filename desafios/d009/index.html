@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(36, 36, 36);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            height: 70px;
+            width: 400px;
+            text-align: center;
+            border-width: 2px;
+            border-style: dashed;
+            border-color: white;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        h1:hover {
+            color: green;
+        }
+
+        #hover-img {
+            display: none;
+            border: 2px dotted purple;
+            text-align: center;
+            color: rgb(225, 0, 255);
+            width: fit-content;
+            margin: 18px auto 18px auto;
+            padding: 10px;  
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 1px 1px 10px rgb(212, 0, 255);
+        }
+
+        h1:hover + #hover-img {
+            display:block;
+            border-radius: 10px;
+        }
+
+        div {
+            text-align: center;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border: 3px dashed rgba(71, 150, 71, 0.589);
+            border-radius: 10px;
+        }
+
+        img:hover {
+            border: 8px double rgb(0, 255, 0);
+            padding: 6px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Meus vídeos</title>
+</head>
+<body>
+    <h1>VÍDEOS LEGAIS PARA ASSISTIR</h1>
+    <div id="hover-img">
+        <img src="imagens/joquinha.png" alt="Imagem do GOAT" style="border: none; margin: 10px; box-shadow: 0px 0px 15px black;">
+        <p>Você já sonhou com este homem?</p>
+    </div>
+    <div>
+        <a href="paghtml.html">
+            <img src="imagens/thumb-html.png" alt="Thumbnail do Curso em Vídeo HTML">
+        </a>
+        <a href="pagjs.html">
+            <img src="imagens/thumb-js.png" alt="Thumbnail do Curso em Vídeo JavaScript">
+        </a>
+        <br>
+        <a href="paghardware.html">
+            <img src="imagens/thumb-hardware.png" alt="Thumbnail do Curso em Vídeo Hardware">
+        </a>
+        <a href="pagpython.html">
+            <img src="imagens/thumb-python.png" alt="Thumbnail do Curso em Vídeo Python">
+        </a>
+    </div>
+</body>
+</html>

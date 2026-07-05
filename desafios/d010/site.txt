@@ -1,0 +1,3 @@
+- Usar mockflow.com para planejar o layout do site.
+- Usar adobe-colors, paletton.com e coolors.com para planejar as cores.
+- Usar fonts.google.com, dafont ou outro para planejar as fontes do site.

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            /* display: inline; - Você pode converter com o display para inline-level e vice-versa */
+            background-color: lightgrey;
+            height: 300px;
+            width: 300px;
+            
+            /* Em shorthand: border: 10px solid darkslategrey; */
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+
+            /* Em shorthand: padding: 10px 11px 12px 13px; (em sentido horário) 
+            - Se caso os quatro lados tiverem o mesmo lado, basta colocar apenas 1 valor: padding: 10px; 
+            - Se caso os lados opostos forem ter a mesma medida, basta colocar os 2 valores: padding: 10px 20px (nesse caso o top e bottom terão 10px, e o left e right terão 20px) */
+            padding-top: 10px;
+            padding-right: 11px;
+            padding-bottom: 12px;
+            padding-left: 13px;
+
+            /* Em shorthand: margin: 10px 11px 12px 13px;
+            - Se caso quiser centralização, basta substituir os dois opostos de uma direção por "auto": margin: 10px auto 12px auto; (dessa forma na esquerda e direita ficará centralizado ao meio. */
+            margin: auto; /* Centraliza no meio automaticamente. */
+            margin-top: 10px;
+            margin-right: 11px;
+            margin-bottom: 12px;
+            margin-left: 13px;
+            
+            /* Em shorthand: outline: 5px dashed salmon; */
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+        }
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixa inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

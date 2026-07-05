@@ -1,0 +1,18 @@
+Anatomia de Caixas:
+
+- Border = borda, vem colado praticamente com o conteúdo, pode ser afastada usando padding, ou seja, o padding é o espaço entre a borda e o conteúdo na parte de dentro.
+
+- Margin = margem, é parecido com o padding, porém, é o espaço do lado de fora da border.
+
+- Outline = contorno/traçado, é uma linha DENTRO da margin, porém fora da border.
+
+Tipos de Caixa:
+
+- Box-level: Pula para linha de baixo, desenha a caixa de espaço, pula novamente, e aí sim continua a escrita. (ocupa 100% do viewport)
+- Inline-level: Não quebra linha, desenha a caixa de espaço na frente, e continua novamente sem pular na frente a escrita. (ocupa só o tamanho que ele precisar)
+
+    Exemplos: 
+    - Box-level: <div>, <h1-h6>, <p>, <main>, <header>, <nav>, <article>, <aside>, <footer>, <form>, <video>
+    - Inline-level: <span>, <a>, <code>, <small>, <strong>, <em>, <sup-sub>, <label>, <button>, <input>, <select>
+
+- User Agent = Agente do usuário (é o navegador do usuário)

@@ -1,0 +1,9 @@
+- Usar color.adobe.com para fazer a paleta.
+
+- Modos de cores: RGB (Red Green Blue, usado em monitores), CMYK (Cyan, Magenta, Yellow, Key que é preto - cor-chave, para impressoras), HSV (Hue Saturation Value, utilizado em design por ser mais intuitivo que a mistura de cores primárias) e LAB (L = luminosity, A = eixo vermelho-verde, B = eixo amarelo-azul, é tridimensional e serve para representar todas cores visíveis independente do dispositivo).
+
+- Usar OS MODOS do color.adobe.com, por exemplo o extrair tema com fotos.
+
+- Usar também o paletton.com e seu modo Examples que já mostra um "site" na prática das cores que você escolheu.
+
+- Usar também o coolors.com e apertar espaço para randomizar novas paletas, gostando de uma cor basta lockar para que não seja mudada, até formar uma paleta inteira.

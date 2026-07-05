@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: "Love Song"; /* Nome que quiser. */
+            src: url("fonts/Mf Love Song.otf") format("opentype"), url("fonts/Mf Love Song.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+            
+            /* 
+            Tipos de format():
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype 
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+            */
+
+            /* Caso queira usar essa mesma fonte em outros arquivos, basta pôr a regra @font-face inteira daqui copiada no arquivo. */
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: "Love Song", Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, repudiandae quo fugit ut, magnam doloribus porro aliquid quae rerum qui in optio sapiente, repellat ipsa sit? Totam quam similique incidunt!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laboriosam nesciunt quaerat iusto recusandae cupiditate ab, deserunt, eius fugiat labore maxime minima voluptatem quae id, ut atque obcaecati iure. Voluptates.</p>
+</body>
+</html>

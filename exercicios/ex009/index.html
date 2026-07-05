@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas ordenadas</h2> <!-- Ordenadas pois a ordem faz diferença. -->
+    <ol type="" start="4"> <!-- ol = ordered list (lista ordenada) - Parâmetro type="" altera a formatação da lista, para números, letras, algarismos romanos e etc. - start="" altera qual dígito será o primeiro da lista. -->
+        <li>Acordar</li> <!-- li = list item (item da lista)-->
+        <li>Ligar para o João</li> <!-- A numeração que a lista põe é automaticamente atualizada caso você ponha algo novo. -->
+        <li>Tomar café</li>
+        <li>Escovar os dentes <!-- No HTML5 o </li> se tornou opcional.-->
+        <li>Ir para a faculdade</li>
+        <li>Almoçar</li>
+        <li>Ir para o trabalho</li>
+        <li>Voltar para casa</li>
+        <li>Jantar</li>
+        <li>Dormir</li>
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <ul type="disc"> <!-- ul = unordered list (lista não ordenada - Para a lista não ordenada só há alguns type="", que são: disc (o padrão), circle e square -->
+        <li>Pão</li>
+        <li>Leite</li>
+        <li>Tomate</li>
+        <li>Alface</li>
+        <li>Arroz</li>
+        <li>Feijão</li>
+    </ul>
+    <h2>Listas mistas</h2>
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas</li>
+        <ol type="I">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!-- O parâmetro start="" é numérico, ou seja, se você quiser alterar por exemplo a letra que vai ser a inicial da lista, você usa a posição dela no alfabeto em número, e não apenas coloca ela para ser continuado a partir dali. Nesse caso, eu pus 5, logo a lista iniciará a partir da letra "e". -->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+    
+    <h3>Meus jogos favoritos</h3>
+    <ol>
+        <li>NES</li>
+        <ul type="square"> <!-- Se selecionar uma parte do texto, segurar a tecla ALT e ir clicando em outras partes, você pode digitar apenas uma vez mas alterar todos lugares selecionados. -->
+            <li>Super Mario Bros</li>
+            <ul type="circle">
+                <li>Super Mario Bros 3</li>
+                <li>Mario: Lost Levels</li>
+            </ul>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Mario</li>
+            <li>Donkey Kong</li>
+        </ul type="square">
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Castlevania</li>
+        </ul>
+    </ol>
+    <h2>Lista de definições</h2>
+    <dl> <!-- dl = Definition List (lista de definição) -->
+        <dt>HTML</dt> <!-- dt = Definition Term (termo da definição) -->
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd> <!-- dd = Definition Description (descrição da definição) -->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação da interatividade de um site.</dd>
+    </dl>
+</body>
+</html>

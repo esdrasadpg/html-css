@@ -1,0 +1,26 @@
+- Cores primárias: Amarelo, Azul, Vermelho
+
+- Cores secundárias: Laranja, Violeta, Verde
+
+- Cores terciárias: Sempre são junções de uma cor primária e outra, portanto o nome deve seguir essa ordem. Exemplos: Amarelo esverdeado. Por que não Verde amarelado? Pois o amarelo é uma cor primária, o verde é secundária, logo a hierarquia deve ser seguida. (Por mais que a cor secundária seja violeta, quando vamos nomear alguma cor terciária, usamos arroxeado como se fosse roxo)
+    Amarelo-esverdeado, amarelo-alaranjado, vermelho-alaranjado, vermelho-arroxeado, azul-arroxeado, azul-esverdeado.
+
+- Temperatura de cores: Fazendo uma reta entre o amarelo-esverdeado e o amarelo cortando de um lado ao outro do círculo cromático, dividimos em 2 lados, cores frias (à esquerda) e cores quentes (à direita).
+
+- Escolha da paleta: Normalmente os sites têm de 3 à 5 cores na paleta desconsiderando preto e branco. E, normalmente se usa as cores primárias da logo do cliente, isso se a logo for bem importante.
+
+- Cores complementares: Basta ver uma cor e selecionar o completo oposto dele. São cores que se contrastam ao máximo (não necessariamente bonito).
+
+- Cores análogas: São as cores imediatamente ao lado esquerdo e direito da cor escolhida. São as cores que não se contrastam tanto. Exemplo: Temos o violeta, suas cores análogas são consequentemente o azul-arroxeado e o vermelho-arroxeado.
+
+- Cores análogas e uma complementar: Basta escolher uma cor, traçar a complementar dela e também suas duas análogas.
+
+- Cores análogas relacionadas: Escolha duas cores lado a lado, e depois pulando uma cor escolha a terceira, por exemplo: Amarelo, amarelo-alaranjado e por último pulando o laranja, vermelho-alaranjado.
+
+- Cores intercaladas: Escolha uma cor e depois vá adicionando outras pulando de um em um (nesse caso, pode ser de 2 em 2 e etc também), por exemplo: Amarelo, pula o amarelo-alaranjado, pega o laranja, pula o vermelho-alaranjado, e por último pega o vermelho.
+    Cores triádicas: pulando de 3 em 3. Um exemplo é as cores primárias, que estão com 3 espaços entre si.
+    Cores em quadrado: pulando de 2 em 2.
+
+- Cores tetrádicas: Escolha uma cor, pegue sua complementar, depois escolha outra cor e pegue sua complementar também, formando um retângulo com as 4 cores. Exemplo: Verde - vermelho e laranja - azul.
+
+- Monocromia: Escolha uma cor e altere sua saturação e luminosidade, conseguindo assim, mais cores a partir de uma só.
