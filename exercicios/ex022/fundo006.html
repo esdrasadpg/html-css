@@ -7,20 +7,26 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
-            background-repeat: repeat-y;
-            background-size: cover; /* contain = 100% da imagem tem que ser exibida mas sem cortar a imagem. cover = cobre 100% da tela mesmo que tenha que cortar um pouco. */
+            background-repeat: no-repeat;
+            background-size: cover; /* contain = 100% da imagem tem que ser exibida mas sem cortar a imagem. cover = cobre 100% da tela mesmo que tenha que cortar um pouco.
+            background-attachment: fixed; */
+
+            /* Shorthand Background: 
+                color -> image -> position -> repeat -> [size] (não funciona) -> attachment*/
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
             border-radius: 15px;
+            max-width: 700px;
         }
     </style>
 </head>
