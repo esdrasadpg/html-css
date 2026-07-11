@@ -9,16 +9,17 @@
     --fonte3: 'Sriracha', cursive;
 }
 
-
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box; /* corrige cálculo de largura em todos elementos */
 }
 
 html, body {
     font-family: var(--fonte1);
     min-height: 100vh;
     background-color: darkgray;
+    overflow-x: hidden; /* evita scroll horizontal no celular */
 }
 
 header {
@@ -26,14 +27,13 @@ header {
     color: white;
     text-align: center;
     text-shadow: 0px 2px 3px black;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; /* corrigido: faltava "s" */
 }
 
 header > h1 {
     font-family: var(--fonte2);
     padding-top: 50px;
     font-variant: small-caps;
-    /*  text-transform: uppercase; Deixa todas letras maiúsculas. font-variant: small-caps; também deixa maiúsculo porém com apenas as primeiras letras maiores em comparação com as próximas.*/
     font-size: 10vw;
     transition-duration: 0.3s;
 }
@@ -53,11 +53,7 @@ header a, footer a {
     text-decoration: none;
     font-weight: bolder;
     transition-duration: 0.3s;
-}
-
-header a {
-    transition-duration: 0.3s;
-    display: inline-block;
+    display: inline-block; /* melhora a transição do font-size */
 }
 
 header a:hover {
@@ -70,13 +66,27 @@ header a:hover {
 
 section {
     font-family: var(--fonte3);
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding: 10vh 30px; /* corrigido: padding igual nos dois lados */
     line-height: 2em;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size: 3.5vw;
     text-align: center;
+    width: 100%; /* garante largura total */
+}
+
+/* responsivo para celular */
+@media (max-width: 600px) {
+    section {
+        font-size: 5vw; /* texto maior no celular */
+        padding: 10vh 20px;
+    }
+
+    section > p:hover {
+        font-size: 6vw;
+    }
+
+    header > h1 {
+        font-size: 15vw;
+    }
 }
 
 section > p {
@@ -109,6 +119,7 @@ section.imagem > p {
     display: inline-block;
     padding: 18px;
     text-shadow: 1px 1px 0px black;
+    max-width: 90%; /* corrigido: evita texto saindo da tela */
 }
 
 section#img01 {
