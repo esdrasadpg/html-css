@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="post"> <!-- O autocomplete retira a aba que permite selecionar o que já foi posto previamente. GET e POST são as formas de enviar os dados pro servidor, no get os dados vão escritos na própria URL. No Post, os dados vão escondidos, o URL se torna o nomedoarquivo.php apenas. Get é melhor para buscas e filtros, o post é melhor para dados sensíveis. O máximo de dados no get é 3000bytes. -->
+    <p>
+        <label for="inome"> <!-- O label é útil para criar ligações entre duas coisas. -->
+            Nome:
+        </label> 
+        <input type="text" name="nome" id="inome">
+    </p>
+    <p>
+        <label for="isobrenome">
+            Sobrenome:
+        </label> 
+        <input type="text" name="sobrenome" id="isobrenome">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+    </p>
+    </form>
+</body>
+</html>
