@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(255, 202, 164);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            transition-duration: 1.5s;
+        }
+
+        h1:hover {
+            color: orangered;
+            text-decoration: underline;
+            font-size: 6em;
+        }
+    </style>
 </head>
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
-            <label for="iusu">Usuário: </label> <input type="text" name="usu" id="iusu">
+            <label for="iusu">Usuário: </label> <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="11" placeholder="Nome do usuário" autocomplete="username"> <!-- O required serve para tornar obrigatório o conteúdo da caixa. O minlength e o maxlength configuram, respectivamente, o tamanho mínimo do texto e o tamanho máximo. Se o size for menor que o max-length, automaticamente ganha uma rolagem se a escrita passar do limite. Placeholder permite pôr um texto no fundo da caixa. O autocomplete no input só funciona se o do formulário estiver on. -->
         </p>
         <p>
-            <label for="isen">Senha: </label> <input type="password" name="sen" id="isen">
+            <label for="isen">Senha: </label> <input type="password" name="sen" id="isen" required minlength="8" autocomplete="new-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
 </body>
