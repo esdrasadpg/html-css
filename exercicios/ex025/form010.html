@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iano">Em que ano você nasceu? </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2026" value="2000" oninput="calcIdade()">
+        </p>
+
+        <p>
+            <label for="iidade" id="textoinicial">Idade que fará (ou fez): </label>
+            <output id="iidade">...</output>
+            <span id="textofinal">anos.</span>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        /* Tentativa:
+        function calcIdade() {
+            let idade = document.getElementById('iano').value
+            let atual = new Date().getFullYear()
+            let outputidade = document.getElementById('iidade')
+            
+            outputidade.innerHTML = atual - Number(idade)
+        } */
+
+        function calcIdade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+            
+            // Dessa linha para baixo já não é do vídeo, eu fiz.
+            if (Number(iidade.innerHTML == 1)) {
+                textoinicial.innerHTML = `Idade que fará (ou fez):`
+                textofinal.innerHTML = `ano.`
+            }
+            else if (Number(iidade.innerHTML == 0)) {
+                textoinicial.innerHTML = ''
+                iidade.innerHTML = ''
+                textofinal.innerHTML = 'Nasceu (ou vai nascer) esse ano.'
+            }
+            else {
+                textofinal.innerHTML = `anos.`
+            }
+        }
+    </script>
+</body>
+</html>
