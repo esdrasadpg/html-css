@@ -1,0 +1,3 @@
+1. O align-content alinha os elementos no cross-axis quando eles estiverem empacotados. Define o espaçamento das linhas (quanto houver mais de uma).
+
+2. O valor padrão do align-content é stretch, ele divide a área total na quantidade de linhas que houverem, e depois dá stratch nos elementos de acordo com o espaço que houver no cross-axis.

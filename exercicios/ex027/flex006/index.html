@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: stretch; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        div.conteiner2 {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-start; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item2 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        div.conteiner3 {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: flex-end; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item3 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        div.conteiner4 {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: center; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item4 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        div.conteiner5 {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-between; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item5 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        div.conteiner6 {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item6 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+
+
+        div.conteiner7 {
+            background-color: lightsalmon;
+            height: 400px;
+
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-around; /* O align-content necessita que seja wrap ou wrap-reverse e só é útil caso haja mais de uma linha. */
+        }
+        div.item7 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">align-content:</h1>
+    <h2>align-content: stretch</h2>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        <div class="item">M</div>
+    </div>
+    <h2>align-content: flex-start</h2>
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+        <div class="item2">H</div>
+        <div class="item2">I</div>
+        <div class="item2">J</div>
+        <div class="item2">K</div>
+        <div class="item2">L</div>
+        <div class="item2">M</div>
+    </div>
+    <h2>align-content: flex-end</h2>
+    <div class="conteiner3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>
+        <div class="item3">H</div>
+        <div class="item3">I</div>
+        <div class="item3">J</div>
+        <div class="item3">K</div>
+        <div class="item3">L</div>
+        <div class="item3">M</div>
+    </div>
+    <h2>align-content: center</h2>
+    <div class="conteiner4">
+        <div class="item">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+        <div class="item4">D</div>
+        <div class="item4">E</div>
+        <div class="item4">F</div>
+        <div class="item4">G</div>
+        <div class="item4">H</div>
+        <div class="item4">I</div>
+        <div class="item4">J</div>
+        <div class="item4">K</div>
+        <div class="item4">L</div>
+        <div class="item4">M</div>
+    </div>
+    <h2>align-content: space-between</h2>
+    <div class="conteiner5">
+        <div class="item5">A</div>
+        <div class="item5">B</div>
+        <div class="item5">C</div>
+        <div class="item5">D</div>
+        <div class="item5">E</div>
+        <div class="item5">F</div>
+        <div class="item5">G</div>
+        <div class="item5">H</div>
+        <div class="item5">I</div>
+        <div class="item5">J</div>
+        <div class="item5">K</div>
+        <div class="item5">L</div>
+        <div class="item5">M</div>
+    </div>
+    <h2>align-content: space-evenly</h2>
+    <div class="conteiner6">
+        <div class="item6">A</div>
+        <div class="item6">B</div>
+        <div class="item6">C</div>
+        <div class="item6">D</div>
+        <div class="item6">E</div>
+        <div class="item6">F</div>
+        <div class="item6">G</div>
+        <div class="item6">H</div>
+        <div class="item6">I</div>
+        <div class="item6">J</div>
+        <div class="item6">K</div>
+        <div class="item6">L</div>
+        <div class="item6">M</div>
+    </div>
+    <h2>align-content: space-around</h2>
+    <div class="conteiner7">
+        <div class="item7">A</div>
+        <div class="item7">B</div>
+        <div class="item7">C</div>
+        <div class="item7">D</div>
+        <div class="item7">E</div>
+        <div class="item7">F</div>
+        <div class="item7">G</div>
+        <div class="item7">H</div>
+        <div class="item7">I</div>
+        <div class="item7">J</div>
+        <div class="item7">K</div>
+        <div class="item7">L</div>
+        <div class="item7">M</div>
+    </div>
+</body>
+</html>
