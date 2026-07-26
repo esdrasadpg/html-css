@@ -1,0 +1,5 @@
+1. Por padrão o align-items vem com stretch.
+
+2. Caso sobre espaço no sentido do main-axis, se resolve com justify-content, o align-items é para o cross-axis.
+
+3. Não há os space-xxxxx para o align-items, mas há uma propriedade para isso. (align-content)

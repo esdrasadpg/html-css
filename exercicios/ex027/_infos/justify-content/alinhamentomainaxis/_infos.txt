@@ -1,0 +1,9 @@
+1. O justify-content vai condensar o espaço em branco com base no main-axis, se for flex-start todo o conteúdo vai ser alinhado no main-start, se for o flex-end todo o conteúdo vai ser alinhado no main-end, consequentemente, o espaço em branco ficará, respectivamente, no main-end e no main-start.
+
+2. No center fica todo o conteúdo no centro, e distribuindo, consequentemente, todo o espaço em branco igualmente no main-start e no main-end, metade para cada.
+
+3. No space-between, o primeiro elemento é alinhado no main-start e o último no main-end, todo o resto se mantém em espaços iguais no centro dos dois.
+
+4. No space-evenly, todo o conteúdo é distribuído de forma que tanto antes quanto depois haja o mesmo espaçamento, isso inclui antes do primeiro e depois do último.
+
+5. No space-around, ele distribui os elementos com base na quantidade, por exemplo: se tiver 3 elementos, ele divide o contêiner em 3 espaços iguais, e dentro de cada espaço ele põe um elemento no centro, consequentemente, entre cada elemento vai haver 2 espaço, o começo dele e o final do outro.

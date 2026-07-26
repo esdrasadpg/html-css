@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        /* JUSTIFY-CONTENT */
+        
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start; /* Opção padrão */
+            margin-bottom: 10px;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteiner2 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+        }
+
+        div.item2 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteiner3 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        div.item3 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteiner4 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        div.item4 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteiner5 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            margin-bottom: 10px;
+        }
+
+        div.item5 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteiner6 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+
+        div.item6 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* ALIGN-ITEMS */
+
+        div.conteinerAlignI {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: stretch; /* Opção padrão */
+            margin-bottom: 10px;
+            height: 100px;
+        }
+
+        div.itemAlignI {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteinerAlignI2 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            height: 100px;
+        }
+
+        div.itemAlignI2 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteinerAlignI3 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: flex-end;
+            margin-bottom: 10px;
+            height: 100px;
+        }
+
+        div.itemAlignI3 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.conteinerAlignI4 {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            margin-bottom: 10px;
+            height: 100px;
+        }
+
+        div.itemAlignI4 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">justify-content:</h1>
+    <h2>justify-content: flex-start</h2>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    <h2>justify-content: flex-end</h2>
+    <div class="conteiner2">
+        <div class="item2">A</div>
+        <div class="item2">B</div>
+        <div class="item2">C</div>
+        <div class="item2">D</div>
+        <div class="item2">E</div>
+        <div class="item2">F</div>
+        <div class="item2">G</div>
+    </div>
+    <h2>justify-content: center</h2>
+    <div class="conteiner3">
+        <div class="item3">A</div>
+        <div class="item3">B</div>
+        <div class="item3">C</div>
+        <div class="item3">D</div>
+        <div class="item3">E</div>
+        <div class="item3">F</div>
+        <div class="item3">G</div>
+    </div>
+    <h2>justify-content: space-between</h2>
+    <div class="conteiner4">
+        <div class="item4">A</div>
+        <div class="item4">B</div>
+        <div class="item4">C</div>
+        <div class="item4">D</div>
+        <div class="item4">E</div>
+        <div class="item4">F</div>
+        <div class="item4">G</div>
+    </div>
+    <h2>justify-content: space-evenly</h2>
+    <div class="conteiner5">
+        <div class="item5">A</div>
+        <div class="item5">B</div>
+        <div class="item5">C</div>
+        <div class="item5">D</div>
+        <div class="item5">E</div>
+        <div class="item5">F</div>
+        <div class="item5">G</div>
+    </div>
+    <h2>justify-content: space-around</h2>
+    <div class="conteiner6">
+        <div class="item6">A</div>
+        <div class="item6">B</div>
+        <div class="item6">C</div>
+        <div class="item6">D</div>
+        <div class="item6">E</div>
+        <div class="item6">F</div>
+        <div class="item6">G</div>
+    </div>
+    <h1 style="text-align: center;">align-items:</h1>
+    <h2>align-items: stretch</h2>
+    <div class="conteinerAlignI">
+        <div class="itemAlignI">A</div>
+        <div class="itemAlignI">B</div>
+        <div class="itemAlignI">C</div>
+        <div class="itemAlignI">D</div>
+        <div class="itemAlignI">E</div>
+        <div class="itemAlignI">F</div>
+        <div class="itemAlignI">G</div>
+    </div>
+    <h2>align-items: flex-start</h2>
+    <div class="conteinerAlignI2">
+        <div class="itemAlignI2">A</div>
+        <div class="itemAlignI2">B</div>
+        <div class="itemAlignI2">C</div>
+        <div class="itemAlignI2">D</div>
+        <div class="itemAlignI2">E</div>
+        <div class="itemAlignI2">F</div>
+        <div class="itemAlignI2">G</div>
+    </div>
+    <h2>align-items: flex-end</h2>
+    <div class="conteinerAlignI3">
+        <div class="itemAlignI3">A</div>
+        <div class="itemAlignI3">B</div>
+        <div class="itemAlignI3">C</div>
+        <div class="itemAlignI3">D</div>
+        <div class="itemAlignI3">E</div>
+        <div class="itemAlignI3">F</div>
+        <div class="itemAlignI3">G</div>
+    </div>
+    <h2>align-items: center</h2>
+    <div class="conteinerAlignI4">
+        <div class="itemAlignI4">A</div>
+        <div class="itemAlignI4">B</div>
+        <div class="itemAlignI4">C</div>
+        <div class="itemAlignI4">D</div>
+        <div class="itemAlignI4">E</div>
+        <div class="itemAlignI4">F</div>
+        <div class="itemAlignI4">G</div>
+    </div>
+</body>
+</html>
