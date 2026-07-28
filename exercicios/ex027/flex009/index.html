@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex; /* O display: flex; é APENAS no contêiner, pois é o pai.*/
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px; /* No auto adapta o tamanho dos itens pelo tamanho do conteúdo deles, em algum valor fixo independente do conteúdo deixa do tamanho posto, se reduzir a caixa o tamanho é reduzido junto, se reduzir demais o conteúdo sai para fora. */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">Conteúdo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteúdo maior ainda, que vai ocupar mais espaço</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

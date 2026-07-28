@@ -1,0 +1,3 @@
+1. No auto ele aumenta o item de acordo com o tamanho do conteúdo dentro dele.
+
+2. Com valor fixo, todos os itens vão ter o mesmo tamanho independente do tanto de conteúdo. Porém, se diminuir o tamanho do contêiner ele vai quebrar o conteúdo dentro e deixar os itens de tamanhos menores, se diminuir ainda mais e não tiver mais como quebrar, os itens vão ficar para fora do contêiner.
