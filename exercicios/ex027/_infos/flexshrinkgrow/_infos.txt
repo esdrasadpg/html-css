@@ -1,0 +1,2 @@
+1. Por padrão o valor do shrink é 1 e do grow é 0. (shrink = pode encolher? grow = pode aumentar?)
+2. 0 = não (false), 1 = sim (true).
