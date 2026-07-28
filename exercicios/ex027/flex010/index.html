@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex; /* O display: flex; é APENAS no contêiner, pois é o pai.*/
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1; /* 0 = false, 1 = true, no 1 ele diminui se o espaço livre acabar, no 0 não, criando barra de rolagem se acabar o espaço. */
+            flex-grow: 1; /* 0 = false, 1 = true, no 1 ele aumenta para cobrir todo o espaço, no 0 não, mantendo o tamanho independente do espaço extra da caixa. */
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
