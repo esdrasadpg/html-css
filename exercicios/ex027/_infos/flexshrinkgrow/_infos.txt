@@ -1,2 +1,12 @@
 1. Por padrão o valor do shrink é 1 e do grow é 0. (shrink = pode encolher? grow = pode aumentar?)
 2. 0 = não (false), 1 = sim (true).
+
+3. Se pôr um valor maior que 1, ele aumenta ou diminui o dobro. Por exemplo, se eu tiver dois itens, um com grow 1 e outro com grow 2, primeiro ele soma (1 + 2 = 3), totalizando 3 significa que vai ter o espaço em branco dividido em 3 partes, dessas 3 partes, 2 terços vão ser do que tem grow 2. Se fosse um com grow 1 e o outro com grow 3, ele somaria totalizando 4 partes, e o que tem grow 3 fica com justamente 3 quartos do total.
+
+4. Flex: 1. grow 2. shrink 3. basis
+ex: flex: 0 1 150px;
+
+5. flex: 0 1 auto; - Exatamente o padrão. Pode ser substituído por flex: initial.
+6. flex: 0 0 auto; - Não aumenta nem diminui, nada flexível, e o tamanho vai depender do conteúdo. Pode ser substituído por flex: none.
+7. flex: 1 1 auto; - Aumenta e diminui o elemento, e o limite do tamanho vai depender do conteúdo. Pode ser substituído por flex: auto.
+8. Se colocar flex: 3; - Apenas o grow é alterado, os outros têm o valor padrão (1 auto), ficando flex: 3 1 auto. por extenso.
