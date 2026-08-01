@@ -1,0 +1,1 @@
+1. Primeiro o align, depois o justify.
