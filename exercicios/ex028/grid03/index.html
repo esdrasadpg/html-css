@@ -7,14 +7,18 @@
     <style>
         div.container {
             border: 3px solid blue;
-            height: 250px;
             display: grid;
 
-            grid-template: repeat(3, auto) / repeat(3, auto);
+            grid-template: repeat(3, 80px) / repeat(3, 120px);
+            grid-auto-flow: column; /* Controla a quebra, se vai ser em rows, column etc. */
+
+            grid-auto-rows: 80px; /* Controla o tamanho padrão se for quebrado. */
+            grid-auto-columns: 120px; /* Controla o tamanho padrão se for quebrado. */
+            
             gap: 10px;
 
-            place-items: start center;
-            place-content: space-between end;
+            place-items: normal normal;
+            place-content: normal normal;
         }
 
         div.item {
@@ -33,6 +37,8 @@
         <div class="item">F</div>
         <div class="item">G</div>
         <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
     </div>
 </body>
 </html>

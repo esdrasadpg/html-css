@@ -1,0 +1,1 @@
+1. grid-row-start controla onde começa nas linhas, grid-column-start controla onde começa nas colunas, mesmo sentido só que para o final no grid-row-end e no grid-column-end.
